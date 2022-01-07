@@ -1,0 +1,23 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.main {
+  color: white;
+  margin-top: 80px;
+}
+
+.main h2 {
+  font-size: 1.9rem;
+  color: #ff5f5f;
+}
+
+.main p {
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.techStack {
+  margin-top: 50px;
+}
