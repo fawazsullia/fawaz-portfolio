@@ -1,5 +1,6 @@
 .nav {
   width: 30%;
+  margin: 100px auto auto 30vw;
 }
 
 .nav ul {
@@ -17,4 +18,16 @@
 .nav li:hover {
   cursor: pointer;
   color: #ff5f5f;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    width: 40%;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav {
+    width: 50%;
+  }
 }

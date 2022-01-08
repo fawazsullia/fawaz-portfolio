@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 
 
-export default function Navigation({path, styles}){
+export default function Navigation({path}){
 
 
     return(
-    <nav className={navigationStyle.nav} style={{ margin : styles.margin}}>
+    <nav className={navigationStyle.nav}>
 <ul>
     { path != "/" && <li><Link href="/">Home</Link></li>}
     { path != "/about" && <li><Link href="/about">About</Link></li>}

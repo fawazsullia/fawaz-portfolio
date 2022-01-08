@@ -1,0 +1,21 @@
+.container {
+  width: 60%;
+  color: white;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+.container span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff5f5f;
+}
+
+.container span:hover {
+  cursor: pointer;
+  color: #f8d419;
+}

@@ -21,3 +21,9 @@
 .nav {
   margin: 20px auto auto auto;
 }
+
+@media (max-width: 1000px) {
+  .main {
+    width: 60%;
+  }
+}
