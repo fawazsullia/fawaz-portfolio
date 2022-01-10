@@ -1,29 +1,42 @@
 import Head from "next/head";
-import Image from "next/image";
-import * as homeStyle from "../styles/Home.module.css";
+import styles from "../styles/404.module.css";
 
-import Navigation from "../components/Navigation";
-import { useRouter } from "next/router";
-import next from "next";
-
-export default function Home() {
-  const router = useRouter();
-
+export default function NotFoundPage() {
   return (
-    <div className={homeStyle.container}>
+    <div>
       <Head>
-        <title>Fawaz Sullia - Software Developer</title>
-        <meta
-          name="description"
-          content="Welcome to fawaz sullia's personal website."
-        />
+        <title>404 : Page not found</title>
       </Head>
-      <main className={homeStyle.main}>
-        <h1>Hey, I'm <span>Fawaz Sullia</span></h1>
-        <p className={homeStyle.p1}>I’m a <span>full-stack web developer</span> who loves everything tech.</p>
-        <p className={homeStyle.p2}>I enjoy building SaaS like full-stack Web-Apps.</p>
-      </main>
-      <Navigation path={router.asPath} styles={{margin : "80px auto auto 31vw"}} />
+      <div className={styles.container}>
+        <h1>Ooops! I'm currently working on this site.</h1>
+        <p>Will be back in no time</p>
+        <p>
+          Meanwhile, you can checkout my{" "}
+          <span>
+            <a
+              href="https://github.com/fawazsullia"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {"Github"}
+            </a>
+          </span>{" "}
+          and{" "}
+          <span>
+            <a href="https://www.linkedin.com/in/fawazsullia/" target="_blank" rel="noreferrer">
+              {"LinkedIn"}
+            </a>
+          </span>
+          . Or, my{" "}
+          <span>
+            <a href="https://gitconnected.com/fawazsullia/resume" target="_blank" rel="noreferrer">
+              {"Resume"}
+            </a>
+          </span>{" "}
+          here.
+        </p>
+      </div>
     </div>
   );
 }
+
